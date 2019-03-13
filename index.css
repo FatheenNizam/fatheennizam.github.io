@@ -46,6 +46,16 @@ body {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  #overlay {
+    font-size: 6vw;
+  }
+  #description {
+    font-size: 4.5vw;
+
+  }
+}
+
 
 
 .unselectable {
