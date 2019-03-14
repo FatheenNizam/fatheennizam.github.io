@@ -38,6 +38,7 @@
 body {
   background-color: rgb(11,11,11);
   font-size: 82px;
+  margin: 0px;
 }
 
 #name {
@@ -56,38 +57,64 @@ body {
   top: 0;
   left: 0;
   margin: auto;
-  opacity: 1;
+  opacity: 0.5;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
   border-bottom: 1px solid rgba(255,255,255, 0.05);
+  animation: random 10s infinite;
+
+
 }
+label {
+  transition: 200ms;
+}
+
+/* label:hover {
+  animation: random 1s infinite;
+} */
 
 .space-it-out {
   letter-spacing: 0.3em;
 }
 
-#coming-soon {
+#coming-soon-wrapper {
   width: 100%;
   text-align: center;
-  margin: auto;
-  margin-top: 170px;
+  margin-top: 83px;
 }
 
-#coming-soon p {
+#clock {
+  font-size: 10vw;
+  color: white;
+  z-index: 3;
+  margin-top: 70px;
+  color: rgba(255,255,255, 0.5);
+}
+
+#coming-soon-wrapper p {
   font-family: 'robotoblack';
   color: rgba(255,255,255, 0.5);
-  font-size: 7vw;
+  font-size: 6.6vw;
   font-weight: 100;
-  display: inline-block;
-  vertical-align: middle;
-  animation: fadein 1200ms;
+  position: relative;
+ bottom: 0;
+
 }
 
 @keyframes fadein {
     from { opacity: 0;
     }
-    to   { opacity: 1;
+    to   { opacity: 0.05;
     }
 }
+
+@keyframes random {
+    15% { color: red; box-shadow: 0 2px 10px red;}
+    30% { color: yellow; box-shadow: 0 2px 10px yellow}
+    45% { color: green; box-shadow: 0 2px 10px green}
+    60% { color: blue; box-shadow: 0 2px 10px blue}
+    75% { color: white; box-shadow: 0 2px 10px white}
+}
+
 
 
 @media (max-width: 600px) {
@@ -122,13 +149,14 @@ body {
 }
 
 .icon:hover {
-  opacity: 1;
+  opacity: 0.15;
   transition: 200ms;
 }
 
 #appleMusic {
   font-size: 34px;
 }
+
 
 a {
   color: inherit;
