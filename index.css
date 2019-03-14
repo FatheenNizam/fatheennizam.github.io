@@ -47,7 +47,7 @@ body {
   height: 70px;
   line-height: 60px;
   font-family: 'molotregular';
-  color: rgba(255,255,255, 0.05);
+  color: rgba(255,255,255, 0.1);
   text-align: center;
   position: fixed;
   width: 100%;
@@ -65,12 +65,13 @@ body {
 
 }
 label {
-  transition: 200ms;
+  transition: 1500ms;
 }
 
-/* label:hover {
-  animation: random 1s infinite;
-} */
+label:hover {
+  transition: 1500ms;
+  animation: randomTitle 3s infinite;
+}
 
 .space-it-out {
   letter-spacing: 0.3em;
@@ -88,7 +89,9 @@ label {
   z-index: 3;
   margin-top: 70px;
   color: rgba(255,255,255, 0.5);
+  transition: 500ms;
 }
+
 
 #coming-soon-wrapper p {
   font-family: 'robotoblack';
@@ -96,8 +99,7 @@ label {
   font-size: 6.6vw;
   font-weight: 100;
   position: relative;
- bottom: 0;
-
+  bottom: 0;
 }
 
 @keyframes fadein {
@@ -108,11 +110,19 @@ label {
 }
 
 @keyframes random {
-    15% { color: red; box-shadow: 0 2px 10px red;}
-    30% { color: yellow; box-shadow: 0 2px 10px yellow}
-    45% { color: green; box-shadow: 0 2px 10px green}
-    60% { color: blue; box-shadow: 0 2px 10px blue}
-    75% { color: white; box-shadow: 0 2px 10px white}
+    15% { box-shadow: 0 2px 10px red; }
+    30% { box-shadow: 0 2px 10px yellow }
+    45% { box-shadow: 0 2px 10px green }
+    60% { box-shadow: 0 2px 10px blue }
+    75% { box-shadow: 0 2px 10px white }
+}
+
+@keyframes randomTitle {
+    15% { color: red; }
+    30% { color: yellow }
+    45% { color: green }
+    60% { color: blue }
+    75% { color: white }
 }
 
 
