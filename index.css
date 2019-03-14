@@ -1,59 +1,104 @@
+@font-face {
+    font-family: 'molotregular';
+    src: url('Molot-webfont.eot');
+    src: url('Molot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Molot-webfont.woff2') format('woff2'),
+         url('Molot-webfont.woff') format('woff'),
+         url('Molot-webfont.ttf') format('truetype'),
+         url('Molot-webfont.svg#molotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-  /* background-image: linear-gradient(135deg, rgb(0,192,175), rgb(0,128,200)); */
+  background-color: rgb(11,11,11);
   font-size: 82px;
 }
 
-#overlay {
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(135deg, rgb(0,192,175), rgb(0,128,200));
-  color: #FFF;
-  z-index: 5;
+#name {
+  background-color: rgb(11,11,11);
+  font-size: 0.5em;
+  height: 70px;
+  line-height: 60px;
+  font-family: 'molotregular';
+  color: rgba(255,255,255, 0.55);
+  text-align: center;
   position: fixed;
+  width: 100%;
+  display: block;
+  z-index: 2;
+  padding: 12px 0px 0 0;
   top: 0;
   left: 0;
+  margin: auto;
   opacity: 1;
-  text-align: center;
-  font-size: 4vw;
-  font-family: Sans-serif;
-  font-weight: 700;
-  line-height: 1200%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
 }
 
-#text {
-  background-color: #FF9500;
-  padding: 9px;
-  opacity: 0.8;
-  border-radius: 4pt;
-  font-size: 2.5vw;
-  box-shadow: 0 0px 20px rgba(165, 0, 0, 0.26);
-  text-decoration: none;
+.space-it-out {
+  letter-spacing: 0.3em;
 }
 
-#description {
+#coming-soon {
   width: 100%;
-  height: 100%;
-  color: #FFF;
-  z-index: 5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.8;
-  font-size: 3vw;
-  font-family: Sans-serif;
-  font-weight: 300;
-  line-height: 2100%;
   text-align: center;
+  margin: auto;
+  margin-top: 170px;
+
 }
+
+#coming-soon p {
+  color: #333;
+  font-size: 7vw;
+  font-weight: 100;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 @media (max-width: 600px) {
-  #overlay {
-    font-size: 6vw;
+  #name {
+    font-size: 0.5em;
+    height: 60px;
+    line-height: 55px;
   }
-  #description {
-    font-size: 4.5vw;
+}
 
-  }
+#wrapper2 {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  animation-delay: 200ms;
+}
+
+.icon {
+  color: #FFF;
+  font-size: 30px;
+  opacity: 0.5;
+  text-align: center;
+  transition: 200ms;
+  margin: 12px;
+}
+
+.icon:hover {
+  opacity: 1;
+  transition: 200ms;
+}
+
+#appleMusic {
+  font-size: 34px;
+}
+
+a {
+  color: inherit;
 }
 
 
