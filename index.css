@@ -16,12 +16,12 @@ body {
 }
 
 #name {
-  background-color: rgb(11,11,11);
+  background-color: rgba(11,11,11);
   font-size: 0.5em;
   height: 70px;
   line-height: 60px;
   font-family: 'molotregular';
-  color: rgba(255,255,255, 0.55);
+  color: rgba(255,255,255, 0.05);
   text-align: center;
   position: fixed;
   width: 100%;
@@ -33,7 +33,7 @@ body {
   margin: auto;
   opacity: 1;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
-  border-bottom: 1px solid rgba(255,255,255, 0.2);
+  border-bottom: 1px solid rgba(255,255,255, 0.05);
 }
 
 .space-it-out {
@@ -48,7 +48,7 @@ body {
 }
 
 #coming-soon p {
-  color: #333;
+  color: rgba(255,255,255, 0.5);
   font-size: 7vw;
   font-weight: 100;
   display: inline-block;
@@ -89,7 +89,7 @@ body {
 .icon {
   color: #FFF;
   font-size: 30px;
-  opacity: 0.5;
+  opacity: 0.05;
   text-align: center;
   transition: 200ms;
   margin: 12px;
