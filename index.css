@@ -100,8 +100,8 @@ body {
   margin-top: 70px;
   color: rgba(255,255,255, 0.7);
   transition: 500ms;
+  animation: fadein 2s;
 }
-
 
 #coming-soon-wrapper p {
   font-family: robotoregular;
@@ -109,13 +109,20 @@ body {
   font-size: 6.6vw;
   font-weight: 100;
   position: relative;
-  bottom: 0;
+  animation-delay: 0.7s;
+  animation: fadein 2s ;
+}
+
+
+#demo {
+  animation: fadein 2s;
+  animation-delay: 1s;
 }
 
 @keyframes fadein {
-    from { opacity: 0;
+    0% { opacity: 0;
     }
-    to   { opacity: 0.05;
+    100% { opacity: 1;
     }
 }
 
@@ -125,14 +132,6 @@ body {
     45% { box-shadow: 0 2px 40px blue }
     60% { box-shadow: 0 2px 30px yellow }
     75% { box-shadow: 0 2px 35px blue }
-}
-
-@keyframes randomTitle {
-    15% { color: blue; }
-    30% { color: #FFDC64; }
-    45% { color: blue; }
-    60% { color: orange; }
-    75% { color: blue; }
 }
 
 /* 4.7" Devices */
