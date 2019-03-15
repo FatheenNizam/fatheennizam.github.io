@@ -75,6 +75,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
   border-bottom: 1px solid rgba(255,255,255, 0.05);
   animation: random 10s infinite;
+  animation-delay: 2s;
   transition: 15s;
 }
 
@@ -109,7 +110,6 @@ body {
   font-size: 6.6vw;
   font-weight: 100;
   position: relative;
-  animation-delay: 0.7s;
   animation: fadein 2s ;
 }
 
