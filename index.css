@@ -75,6 +75,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
   border-bottom: 1px solid rgba(255,255,255, 0.05);
   animation: random 10s infinite;
+  animation-delay: 2s;
   transition: 15s;
 }
 
@@ -120,7 +121,7 @@ body {
 
 #demo {
   animation: fadein 2s;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 
 @keyframes fadein {
@@ -209,6 +210,7 @@ body {
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
+  animation-delay: 200ms;
 }
 
 .icon {
