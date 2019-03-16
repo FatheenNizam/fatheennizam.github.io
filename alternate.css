@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'molotregular';
+    src: url('Molot-webfont.eot');
+    src: url('Molot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Molot-webfont.woff2') format('woff2'),
+         url('Molot-webfont.woff') format('woff'),
+         url('Molot-webfont.ttf') format('truetype'),
+         url('Molot-webfont.svg#molotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('Roboto-Black-webfont.eot');
+    src: url('Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Black-webfont.woff2') format('woff2'),
+         url('Roboto-Black-webfont.woff') format('woff'),
+         url('Roboto-Black-webfont.ttf') format('truetype'),
+         url('Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('Roboto-Bold-webfont.eot');
+    src: url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Bold-webfont.woff2') format('woff2'),
+         url('Roboto-Bold-webfont.woff') format('woff'),
+         url('Roboto-Bold-webfont.ttf') format('truetype'),
+         url('Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff2') format('woff2'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  background-color: #020425;
+  font-size: 82px;
+  margin: 0px;
+}
+
+#coming-soon-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+#coming-soon-wrapper p {
+  font-family: robotoblack;
+  color: #FFDC64;
+  font-size: 10vw;
+  font-weight: 100;
+  position: relative;
+  transition: 250ms;
+  margin: auto;
+}
+
+#demo {
+  font-family: robotoregular;
+  position: relative;
+  font-size: 3vw;
+  animation: fadein 2s;
+  animation-delay: 1s;
+  text-align: center;
+  padding-top: 80px;
+  transition: 250ms;
+}
+
+@media (max-width: 500px) {
+  #coming-soon-wrapper p {
+
+  }
+  #demo {
+    font-size: 5vw;
+  }
+}
+
+@keyframes fadein {
+    0% { opacity: 0;
+    }
+    100% { opacity: 1;
+    }
+}
+
+p {
+  font-family: robotobold;
+  color: #CCC;
+  font-size: 2vw;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
