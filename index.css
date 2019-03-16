@@ -82,10 +82,10 @@ body {
 
 @media (max-width: 500px) {
   #coming-soon-wrapper p {
-
+    font-size: 14vw;
   }
   #demo {
-    font-size: 5vw;
+    font-size: 7vw;
   }
 }
 
