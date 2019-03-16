@@ -89,7 +89,6 @@ body {
   opacity: 1;
 }
 
-
 .space-it-out {
   letter-spacing: 0.3em;
 }
@@ -122,7 +121,7 @@ body {
 
 #demo {
   animation: fadein 2s;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 
 @keyframes fadein {
