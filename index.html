@@ -50,7 +50,7 @@ HEY, WHAT ARE YOU DOING HERE?
 
   <script>
   // Set the date we're counting down to
-  var countDownDate = new Date("March 18, 2019 17:00:00").getTime();
+  var countDownDate = new Date("March 15, 2019 15:26:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -71,13 +71,10 @@ HEY, WHAT ARE YOU DOING HERE?
     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
 
-    document.getElementById("test").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "Just a moment...";
+      document.getElementById("demo").innerHTML = "Refresh your page.";
     }
   }, 1000);
   </script>
