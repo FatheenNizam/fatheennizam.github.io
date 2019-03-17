@@ -41,9 +41,14 @@ HEY, WHAT ARE YOU DOING HERE?
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+    var timestring = "";
+    if (days) timestring += days + "d ";
+    if (hours) timestring += hours + "h ";
+    if (minutes) timestring += minutes + "m ";
+    if (seconds) timestring += seconds + "s";
+
     // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = timestring
 
     // If the count down is finished, write some text
     if (distance < 0) {
