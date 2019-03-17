@@ -58,6 +58,19 @@ body {
   }
 }
 
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #FFEEB2;
+    }
+    #coming-soon-wrapper p {
+      color: #1E2096;
+    }
+    #demo {
+      color: #666;
+    }
+}
+
 @keyframes fadein {
     0% { opacity: 0;
     }
