@@ -16,10 +16,9 @@ HEY, WHAT ARE YOU DOING HERE?
 
   <body>
 
-    <p id="demo" class="unselectable">03.18.19</p>
-
-    <div id="coming-soon-wrapper" class="unselectable">
-      <p>fatheen.com</p>
+    <div id="main-wrapper" class="unselectable">
+      <p id="countdown">03.18.19</p>
+      <p id="name">fatheen.com</p>
     </div>
 
     <script>
@@ -48,12 +47,12 @@ HEY, WHAT ARE YOU DOING HERE?
     if (days || hours || minutes || seconds) timestring += seconds + "s";
 
     // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = timestring
+    document.getElementById("countdown").innerHTML = timestring
 
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("demo").innerHTML = "Refresh your page.";
+      document.getElementById("countdown").innerHTML = "Refresh your page.";
       }
     }, 1000);
     </script>
