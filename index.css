@@ -46,6 +46,10 @@ body {
   margin: 0;
 }
 
+.infoIcon {
+  opacity: 0.5;
+}
+
 @supports (-webkit-backdrop-filter: blur(100px)) {
   #title {
     -webkit-backdrop-filter: blur(100px);
