@@ -23,7 +23,7 @@ src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
 
 body {
   /* background-image: url(https://lh3.googleusercontent.com/aP4EAhY3XU7J7PNKxzYEnaV3OQhzhj9V5kCDC6N4ej9b9_I29X5d7j7zyuX1zl6ziPe1sdBJfxVoT5Mqp2q5b28imGILxlSGVy9AvEtF4NWTbHk20Re7TjNXCzzSTXNhECyfGsedpUyo7kkaPiQQDAKq7_XQwbHwN-BicC3MjrD9lLyPU5nfoUUZDFjb0d2YPajCd4zriFel3-HrCk0h1v2ENDvBmDOD9tmz5XsRUIWK9V4haPmU1EVxjG1PfGY5k892C77NrYGLyW9Q3Rdp3rXwWd2P38-7Jbre_2G8U7pgKD31B00MP4BnCNQU-pT3J0AVyUTEhC5XXlK1Erj0MsaoS0wL3xWM436UtRKtg9AZo1aXD8mhwW-ZFOcdEL5PLhpvtc_kTTb8_Yvtjn9o8EwjDKsiLT9oCUKFkPtw88_3BcXBiServD2xWIB-7vlgk9zoIwruiLt-XtctOdmEKGfbAIYO-KcTmigmoEOzjcQ72CEMaZodF0KBWeFkMKdjeT2YmiL-HdFV8zuczL8__N_i8I-RkYjwTUFxg3VB6oTf0NqrGcQDkGjzKEgDM1OBd1JfQKxeOLs0OcF906rTU0-ia6_oGASaraJcVKTEtgAWmUjkehkvmIwqtEdYB8vcP7HNp2Vml5VBUQ5WIScKP3644R5F1JM=w1710-h1324-no); */
-  background-color: #FAFAFA;
+  background-color: #F2F2F7;
   background-size: 100%;
   font-size: 60px;
   margin: 0;
@@ -63,7 +63,6 @@ body {
   width: 80%;
   height: 2px;
   background: #FFF;
-  /* opacity: 0.15; */
   opacity: 0;
   margin: auto;
   margin-bottom: 2%;
@@ -103,8 +102,32 @@ body {
   z-index; 1;
 }
 
-#header-space {
+#header2 {
+  font-family: 'modernFont-regular';
+  font-size: 24px;
+  color: grey;
+  margin: 14px;
+}
+
+#new-tag {
+  font-size: 14px;
+  color: orange;
+  margin: 0;
+  padding: 0;
+}
+
+.infoIcon2 {
+  font-size: 24px;
+}
+
+#release-date {
+  color: #FF3B30;
+  font-family: 'modernFont-semibold';
+}
+
+#content-wrapper {
   margin-top: 30px;
+  margin-bottom: 30px;
   padding-top: 20px;
   background-color: white;
 }
@@ -124,14 +147,19 @@ body {
 
 .songCard {
   margin: auto;
-  margin-bottom: 7px;
-  padding-bottom: 14px;
+  /* margin-bottom: 6px; */
+  padding-bottom: 270px;
   width: 660px;
   max-width: calc(100% - 16px);
   height: 256px;
   background-color: transparent;
   border-radius: 20px;
   animation-delay: 75ms;
+  box-sizing: border-box;
+}
+
+.beatCard {
+  height: 160px;
 }
 
 .social-icon {
@@ -156,10 +184,11 @@ a {
   color: inherit;
 }
 
-/* --MOBILE DIMENSIONS--  */
+/* MOBILE  */
 @media(max-width: 600px) {
   body {
     font-size: 2.3em;
+    font-size: 10vw;
     margin: 0;
     padding: 0;
   }
@@ -174,12 +203,15 @@ a {
   .songCard {
     max-width: calc(100% - 56px);
   }
+  #header2 {
+    font-size: 16px;
+  }
   #button {
     font-size: 0.3em;
   }
 }
 
-/* OTHER */
+/* DARK MODE */
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121216;
@@ -188,7 +220,7 @@ a {
       background-color: #0D0D0D;
       color: white;
     }
-    #header-space {
+    #content-wrapper {
       background-color: #0D0D0D;
     }
     #header {

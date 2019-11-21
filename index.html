@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- WELCOME TO MY WEBSITE!! -->
 <html>
 
   <head>
@@ -29,9 +28,9 @@
       <i class="fas fa-briefcase infoIcon"></i><label class="unselectable">&nbsp&nbspMusic Producer&nbsp&nbsp<i class="fas fa-map-marker-alt infoIcon"></i>&nbspToronto</b></label>
     </div>
 
-<div id="header-space" class="fade-in-up">
+  <div id="content-wrapper" class="fade-in-up">
     <div id="header" class="fade-in-up">
-      <label class="unselectable">My Music</label>
+      <label class="unselectable">Music</label>
     </div>
 
     <div class= "songCard fade-in-up">
@@ -50,20 +49,30 @@
       <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="246" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/wonder-single/1456265460?app=music"></iframe>
     </div>
 
+    
   </div>
 
     <div id="social-icon-wrapper" class="fade-in-up">
-        <a class="social-icon" id='twitter' href = "https://twitter.com/FatheenNizam" target="_blank"><i class="fab fa-twitter"></i>
-        </a>
-        <a class="social-icon" id='appleMusic' href = "https://itunes.apple.com/us/artist/fatheen-nizam/1208419122" target="_blank"><i class="fab fa-apple"></i>
-        </a>
-        <a class="social-icon" id='spotify' href = "https://open.spotify.com/artist/7lPPnrWNMSnoXYi3rV3Bf1" target="_blank"><i class="fab fa-spotify"></i>
-        </a>
-        <a class="social-icon" id='youtube' href = "https://youtube.com/FatheenNizam" target="_blank"><i class="fab fa-youtube"></i>
-        </a>
-        <a class="social-icon" id='email' href = "mailto:fatheen.nizam@icloud.com" target="_blank"><i class="fas fa-envelope"></i>
-        </a>
+      <a class="social-icon" id='twitter' href = "https://twitter.com/FatheenNizam" target="_blank"><i class="fab fa-twitter"></i>
+      </a>
+      <a class="social-icon" id='appleMusic' href = "https://itunes.apple.com/us/artist/fatheen-nizam/1208419122" target="_blank"><i class="fab fa-apple"></i>
+      </a>
+      <a class="social-icon" id='spotify' href = "https://open.spotify.com/artist/7lPPnrWNMSnoXYi3rV3Bf1" target="_blank"><i class="fab fa-spotify"></i>
+      </a>
+      <a class="social-icon" id='youtube' href = "https://youtube.com/FatheenNizam" target="_blank"><i class="fab fa-youtube"></i>
+      </a>
+      <a class="social-icon" id='email' href = "mailto:fatheen.nizam@icloud.com" target="_blank"><i class="fas fa-envelope"></i>
+      </a>
     </div>
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+
+    <script>
+      var upcomingFriday = new Date();
+      upcomingFriday = moment().day(5).format('MMMM DD' +', '+ 'YYYY'); // upcomingFriday
+      document.getElementById("release-date").innerHTML = 'Friday'
+      document.getElementById("release-date").innerHTML = upcomingFriday
+    </script>
 
     <script>
       document.body.onscroll = function() {
