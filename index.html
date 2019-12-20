@@ -17,7 +17,7 @@
       <label class="unselectable">Fatheen Nizam</label>
     </div>
 
-    <div id="bar" class="fade-in-up"></div>
+    <div id="spacer" class="fade-in-up"></div>
 
     <div id="fatheen-nizam-image" class="fade-in-up">
       <img class="unselectable" src='https://lh3.googleusercontent.com/vavsdJL976yBMaeJAz7zc_uLfhauZmezSgDhmYNA3Hamz4DjQVe0KkwuXIU0ahmNCZjbUuuOq7-6jAsOOnImawqGgdXNGI4W0yQFhZF0CMb8bto8RAAcECch4Zu1prNAc0zPRTKznA=w2400' alt="Fatheen Nizam" width="250vw;"/></a>
@@ -28,9 +28,14 @@
     </div>
 
   <div id="content-wrapper" class="fade-in-up">
+    <div id="announcement-container">
+      <i id="announcement-icon" class="fas fa-bell"></i>
+      <label class="unselectable" id="announcement-header">Modern Ears arrives on <span id="release-date">January&nbsp3,&nbsp2020</span>.</label>
+      <a href="https://smarturl.it/ModernEars" target="_blank" class="unselectable" id="preorder-link">Preorder</a>
+    </div>
 
     <div id="header" class="fade-in-up">
-      <label class="unselectable">Music</label>
+      <label class="unselectable">Music</label><br>
     </div>
 
     <div class= "songCard fade-in-up">
@@ -49,8 +54,29 @@
       <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="246" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/wonder-single/1456265460?app=music"></iframe>
     </div>
 
-    
+    <div id="header" class="fade-in-up"><br>
+      <label class="unselectable">Beats</label><br>
+    </div>
 
+    <div class="songCard beatCard">
+      <iframe src="https://www.beatstars.com/embed/track/?id=3539065" width="100%" height="140" style="border: none;">beatCard</iframe>
+    </div>
+
+    <div class="songCard beatCard">
+      <iframe src="https://www.beatstars.com/embed/track/?id=3488215" width="100%" height="140" style="border: none;">beatCard</iframe>
+    </div>
+
+    <div class="songCard beatCard">
+      <iframe src="https://www.beatstars.com/embed/track/?id=3444263" width="100%" height="140" style="border: none;">beatCard</iframe>
+    </div>
+
+    <div class="songCard beatCard">
+      <iframe src="https://www.beatstars.com/embed/track/?id=3428729" width="100%" height="140" style="border: none;">beatCard</iframe>
+    </div>
+
+    <div class="songCard beatCard">
+      <iframe src="https://www.beatstars.com/embed/track/?id=3380395" width="100%" height="140" style="border: none;">beatCard</iframe>
+    </div>
   </div>
 
     <div id="social-icon-wrapper" class="fade-in-up">
@@ -69,12 +95,12 @@
     <script src="https://momentjs.com/downloads/moment.min.js"></script>
 
     <script>
-      upcomingFriday = Date.today().next().friday().toString('MMMM d, yyyy'); // upcomingFriday
-      document.getElementById("release-date").innerHTML = 'Friday'
-      document.getElementById("release-date").innerHTML = upcomingFriday
-    </script>
 
-    <script>
+
+    // upcomingFriday = Date.today().next().friday().toString('MMMM d, yyyy'); // upcomingFriday
+    // document.getElementById("release-date").innerHTML = 'Friday'
+    // document.getElementById("release-date").innerHTML = upcomingFriday
+
       document.body.onscroll = function() {
         // © Rizadh Nizam (@rizadh)
         let offset = window.pageYOffset
