@@ -57,14 +57,6 @@ body {
   opacity: 0.5;
 }
 
-@supports (-webkit-backdrop-filter: blur(100px)) {
-  #title {
-    -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(100px);
-    background-color: #020425;
-    }
-  }
-
 #spacer {
   width: 80%;
   opacity: 0;
