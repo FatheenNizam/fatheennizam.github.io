@@ -51,6 +51,7 @@ body {
   left: 0;
   margin: 0;
   color: #FFDC64;
+  text-decoration: none;
 }
 
 .infoIcon {
@@ -217,6 +218,11 @@ a {
   color: inherit;
 }
 
+::selection {
+    color: #020425;
+    background: #FFDC64;
+}
+
 /* MOBILE OPTIMIZATION */
 @media(max-width: 600px) {
   body {
@@ -280,6 +286,9 @@ a {
     }
     .social-icon {
       color: white;
+    }
+    ::selection {
+        color: white;
     }
 }
 
