@@ -127,11 +127,11 @@ body {
   display: block;
 }
 #announcement-header {
-  font-size: 24px;
+  font-size: 26px;
   color: black;
   text-align: center;
-  line-height: 24px;
-  padding-top: 32px;
+  line-height: 50px;
+  padding-top: 30px;
   display: block;
 }
 #preorder-link {
@@ -155,6 +155,7 @@ body {
 #release-date {
   color: #FF3B30;
   font-family: 'modernFont-semibold', system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 44px;
 }
 
 #content-wrapper {
@@ -252,6 +253,10 @@ a {
   }
   #announcement-header {
     font-size: 5vw;
+    line-height: 34px;
+  }
+  #release-date {
+    font-size: 26px;
   }
   #preorder-link {
     font-size: 4.2vw;
