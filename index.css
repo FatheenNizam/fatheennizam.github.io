@@ -81,7 +81,7 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4px;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
   z-index: 0;
@@ -93,7 +93,7 @@ body {
   opacity: 0.5;
   text-align: center;
   transition: 200ms;
-  margin: 12px;
+  margin: 8px;
 }
 
 .social-icon:hover {
@@ -103,6 +103,10 @@ body {
 
 #appleMusic {
   font-size: 34px;
+}
+
+#instagram {
+  font-weight: bold;
 }
 
 a {
@@ -230,8 +234,9 @@ a {
     padding: 0;
   }
   #title {
-    line-height: 78px;
     height: 76px;
+    line-height: 78px;
+    letter-spacing: -2px;
   }
   #bar {
     margin-top: 76px;
@@ -240,10 +245,10 @@ a {
   img {
     height: 180px;
     width: 180px;
+    margin-top: -26px;
   }
   #announcement-container {
     max-width: calc(100% - 56px);
-
   }
   #announcement-icon {
     font-size: 6vw;
