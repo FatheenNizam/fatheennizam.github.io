@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "modernFont-medium";
+  src: url("Poppins-Medium.woff2") format("woff2"),
+    url("Poppins-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "modernFont-semibold";
+  src: url("poppins-semibold-webfont.woff2") format("woff2"),
+    url("poppins-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: modernFont-semibold;
+  margin: 0;
+  background-color: #020425;
+}
+
+#content-wrapper {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+#project-title {
+  font-size: 60px;
+  color: #ffdc64;
+  text-align: center;
+  margin: auto;
+  letter-spacing: -2px;
+}
+
+.link-redirect {
+  width: 300px;
+  float: left;
+  margin: 10px;
+  padding: 12px 24px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  letter-spacing: -1px;
+  white-space: nowrap; 
+  flex-grow: 1;
+  flex-basis: 0;
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+}
