@@ -208,6 +208,10 @@ a {
   height: 140px;
 }
 
+iframe {
+  border-radius: 12px;
+}
+
 #special-message {
   text-align: center;
   margin-bottom: 24px;
